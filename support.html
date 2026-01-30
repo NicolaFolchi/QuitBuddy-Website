@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QuitBuddy Support</title>
+    <meta
+      name="description"
+      content="Get help with QuitBuddy — Customize Cmd+Q, including setup, troubleshooting, and contact options."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      body {
+        background: #0b0d10;
+      }
+      .page-wrapper {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 120px 24px 80px;
+        color: #f5f5f5;
+        line-height: 1.6;
+      }
+      .page-wrapper h1 {
+        font-size: 2.6rem;
+        margin-bottom: 0.5rem;
+      }
+      .page-wrapper h2 {
+        margin-top: 2rem;
+        font-size: 1.35rem;
+      }
+      .page-wrapper p,
+      .page-wrapper li {
+        color: #d7dde5;
+      }
+      .page-wrapper ul {
+        padding-left: 1.2rem;
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-bottom: 2rem;
+        color: #9fb4c9;
+        font-weight: 500;
+      }
+      a {
+        color: #7bd7ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
+      <h1>Support</h1>
+      <p>
+        Need help with QuitBuddy — Customize Cmd+Q? These resources cover the most
+        common questions. If you still need assistance, email
+        <a href="mailto:nicolaf.tech@gmail.com">nicolaf.tech@gmail.com</a> and we’ll get back to you.
+      </p>
+
+      <h2>Getting Started</h2>
+      <ul>
+        <li>Grant Accessibility permission so QuitBuddy can raise apps and send the standard quit command.</li>
+        <li>Grant Input Monitoring permission so the app can detect Cmd+Q presses.</li>
+        <li>Open Preferences → Global Mode to choose your default protection (Confirm, Hold, Double‑Press, or Passthrough).</li>
+      </ul>
+
+      <h2>Per-App Rules</h2>
+      <p>
+        Use the Per-App Rules tab to override the global mode. Each app can have its own combination of Confirm, Hold, Double-Press, or Passthrough. Drag rules to change their priority when overlapping conditions exist.
+      </p>
+
+      <h2>Export & Import</h2>
+      <p>
+        In Preferences, click “Export Rules” to save a JSON copy of your QuitBuddy settings. To import on another Mac, use “Import Rules” and select the exported file.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Email <a href="mailto:nicolaf.tech@gmail.com">nicolaf.tech@gmail.com</a> with logs, screenshots, or questions. Be sure to mention your macOS version and QuitBuddy build number (found under Preferences → Diagnostics).
+      </p>
+    </main>
+  </body>
+</html>
