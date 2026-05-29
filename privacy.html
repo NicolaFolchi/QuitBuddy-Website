@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QuitBuddy Privacy Policy</title>
+    <title>Privacy Policy - QuitBuddy</title>
     <meta
       name="description"
-      content="Learn how QuitBuddy handles data, permissions, and in-app purchases on macOS."
+      content="Learn how QuitBuddy handles local settings, macOS permissions, direct licenses, and website privacy."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,114 +14,142 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      body {
-        background: #0b0d10;
-      }
-      .policy-wrapper {
-        max-width: 760px;
-        margin: 0 auto;
-        padding: 120px 24px 80px;
-        color: #f5f5f5;
-        font-size: 1rem;
-        line-height: 1.6;
-      }
-      .policy-wrapper h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-      }
-      .policy-wrapper h2 {
-        font-size: 1.4rem;
-        margin-top: 2rem;
-      }
-      .policy-wrapper p,
-      .policy-wrapper li {
-        color: #d7dde5;
-      }
-      .policy-wrapper ul {
-        padding-left: 1.2rem;
-      }
-      .policy-wrapper a {
-        color: #7bd7ff;
-        text-decoration: none;
-      }
-      .policy-wrapper a:hover {
-        text-decoration: underline;
-      }
-      .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        margin-bottom: 2rem;
-        color: #9fb4c9;
-        font-weight: 500;
-      }
-    </style>
   </head>
-  <body>
-    <main class="policy-wrapper">
+  <body class="legal-page">
+    <main class="legal-wrapper">
       <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
-      <h1>Privacy Policy</h1>
-      <p><strong>Last updated: January 29, 2026</strong></p>
-      <p>
-        QuitBuddy is built by Nicola Folchi. This policy explains how the macOS
-        app and the QuitBuddy website handle personal information.
-      </p>
+      <section class="legal-hero">
+        <span class="section-kicker">Privacy-first utility</span>
+        <h1>Privacy Policy</h1>
+        <p class="legal-updated">Last updated: May 29, 2026</p>
+        <p>
+          QuitBuddy is designed to keep quit protection local, predictable, and
+          easy to understand. This policy explains how the macOS app and static
+          website handle personal information.
+        </p>
+      </section>
 
-      <h2>Data Collection</h2>
-      <p>
-        QuitBuddy does not collect, transmit, or store personal data. All
-        settings, rules, and diagnostics remain on your Mac and never leave your
-        device unless you explicitly export them.
-      </p>
+      <section class="privacy-summary" aria-label="Privacy summary">
+        <article>
+          <strong>No analytics SDKs</strong>
+          <span>The app does not include advertising, analytics, or crash-reporting SDKs.</span>
+        </article>
+        <article>
+          <strong>No typed content recording</strong>
+          <span>Input Monitoring is used only to detect configured quit shortcuts.</span>
+        </article>
+        <article>
+          <strong>Local by default</strong>
+          <span>Rules, preferences, diagnostics, and exports stay on your Mac.</span>
+        </article>
+      </section>
 
-      <h2>Permissions</h2>
-      <ul>
-        <li>
-          <strong>Accessibility</strong> is required to raise apps and send
-          system-defined quit commands. No keystrokes or window contents are
-          recorded or transmitted.
-        </li>
-        <li>
-          <strong>Input Monitoring</strong> lets QuitBuddy observe Cmd+Q so it
-          can confirm quits. The app does not log, analyze, or upload keyboard
-          input.
-        </li>
-      </ul>
-      <p>
-        Both permissions are optional but necessary for the app’s core
-        functionality. You can revoke them at any time in System Settings ▸
-        Privacy &amp; Security.
-      </p>
+      <section class="legal-card">
+        <h2>Data Collection</h2>
+        <p>
+          QuitBuddy does not collect analytics, transmit keyboard input, sell data,
+          or store personal usage data. Settings, protected-app rules, quit modes,
+          and diagnostics remain on your Mac and never leave your device unless you
+          explicitly export or share them.
+        </p>
+      </section>
 
-      <h2>Purchases</h2>
-      <p>
-        QuitBuddy uses Apple’s StoreKit and App Store Commerce for payments. All
-        purchase data is handled by Apple; the developer does not receive credit
-        card details or personal information beyond what Apple makes available
-        to developers (aggregated sales/analytics).
-      </p>
+      <section class="legal-card">
+        <h2>Permissions</h2>
+        <ul>
+          <li>
+            <strong>Input Monitoring</strong> lets QuitBuddy detect Command-Q so it
+            can apply your configured quit protection. The app does not record
+            typed content, collect keystroke history, analyze what you type, or
+            upload keyboard input.
+          </li>
+          <li>
+            <strong>Accessibility</strong> lets QuitBuddy return focus and send a
+            confirmed quit action to the intended app after you explicitly choose
+            to quit. It is used only for configured quit-shortcut behavior.
+          </li>
+        </ul>
+        <p>
+          These permissions are optional but required for QuitBuddy's core
+          protection features. You can revoke them at any time in System Settings
+          &gt; Privacy &amp; Security.
+        </p>
+      </section>
 
-      <h2>Third-Party Services</h2>
-      <p>
-        The app does not include third-party analytics, advertising SDKs, or
-        crash reporters. The website is a static page hosted on GitHub Pages and
-        may collect standard server logs.
-      </p>
+      <section class="legal-card">
+        <h2>Purchases</h2>
+        <p>
+          The first public direct-download release uses Lemon Squeezy for checkout,
+          payment processing, license-key delivery, and license validation. Future
+          App Store builds may use Apple's StoreKit and App Store Commerce for
+          purchases. QuitBuddy does not receive or store credit card details.
+        </p>
+        <p>
+          In direct-download builds, the app contacts Lemon Squeezy's public
+          license endpoints when you activate, validate, or deactivate a license.
+          The app stores the license key and minimal license metadata in your
+          Mac's Keychain so Standard access can be restored locally. QuitBuddy does
+          not store your Lemon Squeezy customer email in its local license record.
+        </p>
+      </section>
 
-      <h2>Children</h2>
-      <p>
-        QuitBuddy is rated 4+ on the App Store and is suitable for all ages.
-        The app does not collect personal information from any user, including
-        children, and it contains no advertising or web browsing.
-      </p>
+      <section class="legal-card">
+        <h2>Free And Standard</h2>
+        <p>
+          Free mode works without an account and protects one active app rule.
+          Standard unlocks unlimited per-app rules through a license key. License
+          checks are limited to activation, validation, deactivation, and restoring
+          saved license status.
+        </p>
+      </section>
 
-      <h2>Contact</h2>
-      <p>
-        For any privacy questions, email
-        <a href="mailto:nicolaf.tech@gmail.com">nicolaf.tech@gmail.com</a>.
-      </p>
+      <section class="legal-card">
+        <h2>Third-Party Services</h2>
+        <p>
+          The app does not include third-party analytics, advertising SDKs, or
+          crash reporters. Lemon Squeezy is used only for direct checkout and
+          license management. The website is static and may collect standard server
+          logs through the hosting provider.
+        </p>
+      </section>
+
+      <section class="legal-card">
+        <h2>Website</h2>
+        <p>
+          The website does not intentionally set tracking cookies or include
+          behavioral analytics. External links, such as Lemon Squeezy checkout or
+          download hosting, are governed by those providers' own policies once you
+          leave the QuitBuddy site.
+        </p>
+      </section>
+
+      <section class="legal-card">
+        <h2>Children</h2>
+        <p>
+          QuitBuddy is rated 4+ on the App Store and is suitable for all ages.
+          The app does not collect personal information from any user, including
+          children, and it contains no advertising or web browsing.
+        </p>
+      </section>
+
+      <section class="legal-card">
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, email
+          <a href="mailto:quitbuddy.support@gmail.com">quitbuddy.support@gmail.com</a>.
+        </p>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="mailto:quitbuddy.support@gmail.com">Support</a>
+      </div>
+      <p>© QuitBuddy</p>
+    </footer>
   </body>
 </html>

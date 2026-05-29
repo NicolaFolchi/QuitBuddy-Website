@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuitBuddy for macOS – Smarter ⌘Q Protection</title>
+    <title>QuitBuddy for macOS - Command-Q Quit Protection</title>
     <meta
       name="description"
-      content="QuitBuddy keeps accidental ⌘Q quits at bay with confirmation prompts, per-app rules, diagnostics, and exportable settings in one polished macOS utility."
+      content="QuitBuddy helps prevent accidental Command-Q quits with per-app confirmation, hold, double-press, and allow behavior in a privacy-conscious macOS utility."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +28,9 @@
     />
     <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
@@ -39,76 +42,122 @@
         />
         <h1>QuitBuddy</h1>
       </div>
-      <a
-        class="cta nav-download"
-        href="https://apps.apple.com/"
-        target="_blank"
-        rel="noopener"
-        >Download for macOS</a
-      >
+      <nav class="header-actions" aria-label="Download and purchase">
+        <a
+          class="cta nav-download"
+          href="https://getquitbuddy.com/download"
+          target="_blank"
+          rel="noopener"
+          >Download Free</a
+        >
+        <a
+          class="secondary-link nav-link"
+          href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+          target="_blank"
+          rel="noopener"
+          >Buy Standard</a
+        >
+      </nav>
     </header>
 
     <main id="overview">
-      <section class="hero" id="hero">
+      <section class="hero reveal" id="hero">
         <div class="hero-copy">
-          <span class="eyebrow">Cmd+Q control</span>
-          <h2>Control Cmd+Q. On Your Terms.</h2>
+          <span class="eyebrow">Command-Q quit protection</span>
+          <h2>Prevent accidental app quits.</h2>
           <p>
-            Take control of accidental quits with a smarter, customizable Cmd+Q
-            experience.
+            QuitBuddy adds intentional keyboard shortcut guardrails around
+            Command-Q, with per-app behavior for confirmation, hold,
+            double-press, or normal allow.
           </p>
           <div class="hero-cta">
             <a
               class="cta"
-              href="https://apps.apple.com/"
+              href="https://getquitbuddy.com/download"
               target="_blank"
               rel="noopener"
-              >Download from App Store</a
+              >Download Free</a
             >
-            <p class="hero-note">macOS 12+ · Works offline · No tracking</p>
+            <a
+              class="secondary-cta"
+              href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+              target="_blank"
+              rel="noopener"
+              >Buy Standard</a
+            >
+            <p class="hero-note">Free protects one app · Standard launch offer $9.99 · Works offline · No tracking</p>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit hero-orbit--one"></div>
+          <div class="hero-orbit hero-orbit--two"></div>
           <figure class="screenshot-frame">
             <img
               src="assets/img/quit_confirmation_screenshot.png"
               alt="QuitBuddy confirmation HUD showing a quit prompt"
             />
           </figure>
+          <div class="hero-chip hero-chip--top">⌘Q intercepted</div>
+          <div class="hero-chip hero-chip--bottom">Hold · Confirm · Double-Press</div>
         </div>
       </section>
 
-      <section class="pain" id="pain" aria-label="What QuitBuddy solves">
+      <section class="pain reveal" id="pain" aria-label="What QuitBuddy solves">
         <div class="section-heading">
           <h3>What QuitBuddy solves</h3>
-          <p>Structured protection for every way you quit.</p>
+          <p>Intentional protection for important app exits.</p>
         </div>
         <div class="pain__grid">
           <article>
             <h4>Stop accidental quits</h4>
-            <p>Intercept ⌘Q before it torpedoes unsaved work.</p>
+            <p>Add a deliberate step before Command-Q closes an important app.</p>
           </article>
           <article>
             <h4>Per-app intent</h4>
             <p>
-              Define how each app behaves when quitting—confirm, hold,
+              Define how each app behaves when quitting: confirm, hold,
               double-press, or passthrough.
             </p>
           </article>
           <article>
-            <h4>Invisible until needed</h4>
+            <h4>Accessibility-supportive</h4>
             <p>
-              Lightweight overlays and rules that protect your flow without
-              nagging.
+              Helpful for users who benefit from extra confirmation around
+              destructive keyboard shortcuts.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="modes" id="modes" aria-label="Smart quit modes">
+      <section class="how-it-works reveal" id="how-it-works" aria-label="How QuitBuddy works">
+        <div class="section-heading">
+          <span class="section-kicker">Guided protection</span>
+          <h3>A smoother way to quit intentionally</h3>
+          <p>QuitBuddy stays quiet until Command-Q needs a second thought.</p>
+        </div>
+        <div class="flow-steps">
+          <article class="flow-step">
+            <span class="flow-step__number">01</span>
+            <h4>Press ⌘Q</h4>
+            <p>Your normal shortcut still starts the quit flow.</p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-step__number">02</span>
+            <h4>QuitBuddy checks the app</h4>
+            <p>Per-app rules decide whether to confirm, hold, double-press, or allow.</p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-step__number">03</span>
+            <h4>You stay in control</h4>
+            <p>Accidental quits are stopped, intentional quits still feel fast.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="modes reveal" id="modes" aria-label="Smart quit modes">
         <div class="section-heading">
           <h3>Smart quit modes</h3>
-          <p>The protection you actually need—no scripts, no hacks.</p>
+          <p>The protection you actually need, without changing normal quitting where you allow it.</p>
         </div>
         <div class="modes__grid">
           <article class="mode-card">
@@ -134,7 +183,7 @@
         </div>
       </section>
 
-      <section class="setup" id="setup" aria-label="Setup and defaults">
+      <section class="setup reveal" id="setup" aria-label="Setup and defaults">
         <div class="setup__visual" aria-hidden="true">
           <figure class="screenshot-frame">
             <img
@@ -144,14 +193,15 @@
           </figure>
         </div>
         <div class="setup__copy">
-          <h3>Effortless setup &amp; smart defaults</h3>
+          <h3>Simple setup, clear permissions</h3>
           <p>
-            Global protection when you want it, precise control when you need
-            it.
+            QuitBuddy uses macOS permissions only to detect and manage your
+            configured quit shortcuts.
           </p>
           <ul>
             <li>Global quit mode for every app</li>
             <li>Per-app rules for total control</li>
+            <li>No typed content recording or keystroke history</li>
             <li>Export & import settings across devices</li>
             <li>Clean, native preferences window</li>
           </ul>
@@ -159,7 +209,7 @@
       </section>
 
       <section
-        class="setup setup--inverse"
+        class="setup setup--inverse reveal"
         id="menu"
         aria-label="Menu bar companion"
       >
@@ -183,59 +233,57 @@
         </div>
       </section>
 
-      <section id="pricing" class="pricing" aria-label="Pricing">
+      <section id="pricing" class="pricing reveal" aria-label="Pricing">
         <div class="pricing__header">
           <img
             class="pricing__icon"
             src="assets/img/quitbuddy-icon-1024.png"
             alt="QuitBuddy app icon"
           />
-          <h2>Transparent, One-Time Pricing</h2>
-          <p>One simple purchase, lifetime access. That’s it.</p>
+          <h2>Transparent Standard Pricing</h2>
+        <p>Launch offer pricing for QuitBuddy's current core quit protection.</p>
         </div>
         <div class="pricing__grid">
-          <article class="pricing-card trial" aria-label="QuitBuddy free trial">
-            <p class="pricing-card__label">Free during early access</p>
+          <article class="pricing-card trial" aria-label="QuitBuddy free mode">
+            <p class="pricing-card__label">Free forever</p>
             <h3>Free</h3>
             <p class="pricing-card__subtext">
-              Full access to all features during the trial
+              Protect one app with core Command-Q guardrails
             </p>
             <p class="pricing-card__note">
-              After the free period: only
-              <strong>1 rule per app allowed.</strong> free forever
+              Upgrade to Standard when you want unlimited per-app rules.
             </p>
             <a
               class="cta"
-              href="https://apps.apple.com/"
+              href="https://getquitbuddy.com/download"
               target="_blank"
               rel="noopener"
-              >Start free trial</a
+              >Download Free</a
             >
           </article>
           <article
             class="pricing-card license"
-            aria-label="QuitBuddy lifetime license"
+            aria-label="QuitBuddy Standard lifetime license"
           >
-            <p class="pricing-card__label">Lifetime license</p>
-            <h3>$8.99</h3>
+            <p class="pricing-card__label">Launch offer</p>
+            <h3><span class="price-original">$12.99</span> $9.99</h3>
             <p class="pricing-card__subtext">
-              One-time purchase. Lifetime access and support
+              Lifetime Standard license for QuitBuddy's current core feature set
             </p>
             <p class="pricing-card__note">
-              One purchase unlocks QuitBuddy on every device using your Apple ID
-              (Family Sharing supported)
+              Regular Standard price is $12.99. Start with Free and upgrade from the app or buy a license key here.
             </p>
             <a
               class="cta"
-              href="https://apps.apple.com/"
+              href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
               target="_blank"
               rel="noopener"
-              >Buy lifetime license</a
+              >Buy Standard</a
             >
           </article>
         </div>
       </section>
-      <section class="trust" id="why" aria-label="Why QuitBuddy">
+      <section class="trust reveal" id="why" aria-label="Why QuitBuddy">
         <div class="section-heading">
           <h3>Why QuitBuddy?</h3>
           <p>Premium protection that feels at home on macOS.</p>
@@ -243,26 +291,33 @@
         <ul class="trust__list">
           <li>Built for macOS, feels native</li>
           <li>Lightweight and energy-efficient</li>
-          <li>No subscriptions—ever</li>
+          <li>Standard lifetime license for core protection</li>
           <li>Privacy-first with no analytics that track usage</li>
           <li>Responsive support from the team that builds it</li>
         </ul>
       </section>
 
-      <section id="cta" class="cta-banner" aria-label="Download call to action">
+      <section id="cta" class="cta-banner reveal" aria-label="Download call to action">
         <div class="cta-banner__content">
           <h3>Ready to guard your ⌘Q?</h3>
           <p>
-            Download QuitBuddy today and keep your macOS workspace safe from
-            accidental quits. No ads, no tracking, works offline.
+            Start with Free, then upgrade to Standard when you want unlimited
+            per-app protection. No ads, no tracking, works offline.
           </p>
           <div class="button-row">
             <a
               class="cta"
-              href="https://apps.apple.com/"
+              href="https://getquitbuddy.com/download"
               target="_blank"
               rel="noopener"
-              >Download QuitBuddy</a
+              >Download Free</a
+            >
+            <a
+              class="secondary-cta secondary-cta--on-gradient"
+              href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+              target="_blank"
+              rel="noopener"
+              >Buy Standard</a
             >
             <a class="secondary-link" href="#modes">See smart modes →</a>
           </div>
@@ -272,7 +327,7 @@
 
     <footer class="site-footer">
       <div class="footer-links">
-        <a href="support.html">Support</a>
+        <a href="mailto:quitbuddy.support@gmail.com">Support</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="changelog.html">Changelog</a>
       </div>
@@ -281,6 +336,25 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const revealTargets = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.18 }
+        );
+
+        revealTargets.forEach((target) => observer.observe(target));
+      } else {
+        revealTargets.forEach((target) => target.classList.add("is-visible"));
+      }
     </script>
   </body>
 </html>

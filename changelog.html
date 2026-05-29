@@ -3,66 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QuitBuddy Changelog</title>
-    <meta name="description" content="Release notes and updates for QuitBuddy — Customize Cmd+Q." />
+    <title>Changelog - QuitBuddy</title>
+    <meta
+      name="description"
+      content="Follow QuitBuddy release notes, direct-download launch updates, and app improvements."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      body {
-        background: #0b0d10;
-      }
-      .page-wrapper {
-        max-width: 760px;
-        margin: 0 auto;
-        padding: 120px 24px 80px;
-        color: #f5f5f5;
-      }
-      h1 {
-        font-size: 2.6rem;
-        margin-bottom: 1rem;
-      }
-      h2 {
-        margin-top: 2.4rem;
-        font-size: 1.4rem;
-      }
-      p,
-      li {
-        color: #d7dde5;
-        line-height: 1.6;
-      }
-      ul {
-        padding-left: 1.2rem;
-      }
-      .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        margin-bottom: 2rem;
-        color: #9fb4c9;
-        font-weight: 500;
-      }
-    </style>
   </head>
-  <body>
-    <main class="page-wrapper">
+  <body class="legal-page">
+    <main class="legal-wrapper">
       <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
-      <h1>Changelog</h1>
-      <p>Key updates and improvements to QuitBuddy — Customize Cmd+Q.</p>
+      <section class="legal-hero">
+        <span class="section-kicker">Release notes</span>
+        <h1>Changelog</h1>
+        <p>
+          A concise record of user-facing QuitBuddy updates. The first public
+          direct-download release is still being finalized, so this page will
+          grow as signed builds ship.
+        </p>
+      </section>
 
-      <article>
-        <h2>Version 1.0 (Jan 29, 2026)</h2>
-        <ul>
-          <li>Initial Mac App Store release.</li>
-          <li>Confirm to Quit, Hold to Quit, Double-Press, and Passthrough modes.</li>
-          <li>Per-app rules with export/import support.</li>
-          <li>Menu bar companion, diagnostics window, and onboarding permissions flow.</li>
-        </ul>
-      </article>
+      <section class="timeline" aria-label="QuitBuddy release timeline">
+        <article class="timeline-entry">
+          <span class="timeline-entry__date">Coming soon</span>
+          <h2>QuitBuddy 1.0 direct release</h2>
+          <p>
+            Initial direct-download release with Free mode and Standard lifetime
+            licensing through Lemon Squeezy.
+          </p>
+          <ul>
+            <li>Free mode protects one active app rule.</li>
+            <li>Standard unlocks unlimited per-app quit protection rules.</li>
+            <li>Confirm, Hold, Double-Press, Block, and Allow quit behaviors.</li>
+            <li>Adaptive onboarding for permissions and first protected app setup.</li>
+            <li>Privacy-forward local settings with no analytics SDKs.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-entry timeline-entry--muted">
+          <span class="timeline-entry__date">Pre-release</span>
+          <h2>Launch preparation</h2>
+          <p>
+            Direct distribution, license activation, onboarding clarity, and the
+            marketing website were prepared before the first signed/notarized
+            public artifact.
+          </p>
+        </article>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:quitbuddy.support@gmail.com">Support</a>
+      </div>
+      <p>© QuitBuddy</p>
+    </footer>
   </body>
 </html>

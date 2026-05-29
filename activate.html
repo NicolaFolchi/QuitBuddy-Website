@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Activate QuitBuddy Standard</title>
+    <meta
+      name="description"
+      content="Open QuitBuddy and activate your Standard license key."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="legal-page">
+    <main class="legal-wrapper activation-wrapper">
+      <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
+      <section class="legal-hero activation-hero">
+        <span class="section-kicker">Standard activation</span>
+        <h1>Opening QuitBuddy...</h1>
+        <p id="activation-message">
+          If QuitBuddy is installed, your browser should ask to open the app and
+          activate your Standard license.
+        </p>
+      </section>
+
+      <section class="legal-card activation-card">
+        <h2>If nothing happens</h2>
+        <p>
+          Make sure QuitBuddy is installed, then try opening the app activation
+          link again.
+        </p>
+        <div class="button-row">
+          <a class="cta" href="https://getquitbuddy.com/download">Download Free</a>
+          <button class="secondary-cta" id="retry-activation" type="button">
+            Open QuitBuddy
+          </button>
+        </div>
+      </section>
+
+      <section class="legal-card activation-card" id="manual-card" hidden>
+        <h2>Manual activation</h2>
+        <p>
+          You can also copy your license key and paste it into QuitBuddy from
+          <strong>License Status...</strong>.
+        </p>
+        <div class="license-copy-row">
+          <code id="license-key-display"></code>
+          <button class="secondary-cta" id="copy-license" type="button">
+            Copy Key
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:quitbuddy.support@gmail.com">Support</a>
+      </div>
+      <p>© QuitBuddy</p>
+    </footer>
+
+    <script>
+      const params = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const licenseKey = params.get("license_key") || params.get("licenseKey") || params.get("license");
+      const message = document.getElementById("activation-message");
+      const retryButton = document.getElementById("retry-activation");
+      const manualCard = document.getElementById("manual-card");
+      const licenseKeyDisplay = document.getElementById("license-key-display");
+      const copyButton = document.getElementById("copy-license");
+
+      function activationURL() {
+        if (!licenseKey) return null;
+        return `quitbuddy://activate?license_key=${encodeURIComponent(licenseKey)}`;
+      }
+
+      function openQuitBuddy() {
+        const url = activationURL();
+        if (!url) return;
+        window.location.href = url;
+      }
+
+      if (licenseKey) {
+        manualCard.hidden = false;
+        licenseKeyDisplay.textContent = licenseKey;
+        retryButton.addEventListener("click", openQuitBuddy);
+        copyButton.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText(licenseKey);
+            copyButton.textContent = "Copied";
+          } catch {
+            copyButton.textContent = "Copy failed";
+          }
+        });
+        setTimeout(openQuitBuddy, 350);
+      } else {
+        message.textContent = "No license key was found in this activation link.";
+        retryButton.disabled = true;
+      }
+    </script>
+  </body>
+</html>
