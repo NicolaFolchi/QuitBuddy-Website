@@ -36,7 +36,7 @@
           link again.
         </p>
         <div class="button-row">
-          <a class="cta" href="https://getquitbuddy.com/download">Download Free</a>
+          <a class="cta" href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg" download>Download Free</a>
           <button class="secondary-cta" id="retry-activation" type="button">
             Open QuitBuddy
           </button>
@@ -68,8 +68,15 @@
     </footer>
 
     <script>
-      const params = new URLSearchParams(window.location.hash.replace(/^#/, ""));
-      const licenseKey = params.get("license_key") || params.get("licenseKey") || params.get("license");
+      const queryParams = new URLSearchParams(window.location.search);
+      const fragmentParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const licenseKey =
+        queryParams.get("license_key") ||
+        queryParams.get("licenseKey") ||
+        queryParams.get("license") ||
+        fragmentParams.get("license_key") ||
+        fragmentParams.get("licenseKey") ||
+        fragmentParams.get("license");
       const message = document.getElementById("activation-message");
       const retryButton = document.getElementById("retry-activation");
       const manualCard = document.getElementById("manual-card");
