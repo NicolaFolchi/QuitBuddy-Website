@@ -57,6 +57,21 @@
     });
   }
 
+  function trackPageview(path, title, attempts) {
+    if (!path) return;
+    if (!window.goatcounter || typeof window.goatcounter.count !== "function") {
+      if ((attempts || 0) < 20) {
+        window.setTimeout(() => trackPageview(path, title, (attempts || 0) + 1), 100);
+      }
+      return;
+    }
+
+    window.goatcounter.count({
+      path,
+      title: title || document.title,
+    });
+  }
+
   document.querySelectorAll("[data-checkout-link]").forEach(appendCampaignParams);
 
   document.querySelectorAll("[data-analytics-event]").forEach((element) => {
@@ -68,6 +83,11 @@
   });
 
   const pageEvent = document.body.dataset.analyticsPageEvent;
+  const pagePath = document.body.dataset.analyticsPagePath;
+  if (pagePath) {
+    trackPageview(pagePath, document.body.dataset.analyticsPageTitle);
+  }
+
   if (pageEvent) {
     trackEvent(pageEvent, {
       has_license_key: document.body.dataset.hasLicenseKey || "unknown",
