@@ -28,6 +28,7 @@
     />
     <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script data-goatcounter="https://quitbuddy.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -46,12 +47,17 @@
         <a
           class="cta nav-download"
           href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg"
+          data-analytics-event="Download Free Click"
+          data-analytics-placement="header"
           download
           >Download Free</a
         >
         <a
           class="secondary-link nav-link"
           href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+          data-analytics-event="Buy Standard Click"
+          data-analytics-placement="header"
+          data-checkout-link
           target="_blank"
           rel="noopener"
           >Buy Standard</a
@@ -73,17 +79,22 @@
             <a
               class="cta"
               href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg"
+              data-analytics-event="Download Free Click"
+              data-analytics-placement="hero"
               download
               >Download Free</a
             >
             <a
               class="secondary-cta"
               href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+              data-analytics-event="Buy Standard Click"
+              data-analytics-placement="hero"
+              data-checkout-link
               target="_blank"
               rel="noopener"
               >Buy Standard</a
             >
-            <p class="hero-note">Free protects one app · Standard launch offer $9.99 · Works offline · No tracking</p>
+            <p class="hero-note">Free protects one app · Standard launch offer $9.99 · Works offline · No app telemetry</p>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -254,6 +265,8 @@
             <a
               class="cta"
               href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg"
+              data-analytics-event="Download Free Click"
+              data-analytics-placement="pricing"
               download
               >Download Free</a
             >
@@ -273,6 +286,9 @@
             <a
               class="cta"
               href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+              data-analytics-event="Buy Standard Click"
+              data-analytics-placement="pricing"
+              data-checkout-link
               target="_blank"
               rel="noopener"
               >Buy Standard</a
@@ -289,7 +305,7 @@
           <li>Built for macOS, feels native</li>
           <li>Lightweight and energy-efficient</li>
           <li>Standard lifetime license for core protection</li>
-          <li>Privacy-first with no analytics that track usage</li>
+          <li>Privacy-first with no app telemetry or usage tracking</li>
           <li>Responsive support from the team that builds it</li>
         </ul>
       </section>
@@ -299,18 +315,23 @@
           <h3>Ready to guard your ⌘Q?</h3>
           <p>
             Start with Free, then upgrade to Standard when you want unlimited
-            per-app protection. No ads, no tracking, works offline.
+            per-app protection. No ads, no app telemetry, works offline.
           </p>
           <div class="button-row">
             <a
               class="cta"
               href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg"
+              data-analytics-event="Download Free Click"
+              data-analytics-placement="footer-cta"
               download
               >Download Free</a
             >
             <a
               class="secondary-cta secondary-cta--on-gradient"
               href="https://quitbuddy.lemonsqueezy.com/checkout/buy/e980e4d6-9954-4b8b-8938-cdb16f34d5c8"
+              data-analytics-event="Buy Standard Click"
+              data-analytics-placement="footer-cta"
+              data-checkout-link
               target="_blank"
               rel="noopener"
               >Buy Standard</a
@@ -352,5 +373,6 @@
         revealTargets.forEach((target) => target.classList.add("is-visible"));
       }
     </script>
+    <script src="assets/js/analytics.js"></script>
   </body>
 </html>

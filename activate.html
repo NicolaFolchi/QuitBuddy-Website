@@ -16,8 +16,9 @@
     />
     <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script data-goatcounter="https://quitbuddy.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   </head>
-  <body class="legal-page">
+  <body class="legal-page" data-analytics-page-event="Activation Bridge Viewed">
     <main class="legal-wrapper activation-wrapper">
       <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
       <section class="legal-hero activation-hero">
@@ -36,7 +37,14 @@
           link again.
         </p>
         <div class="button-row">
-          <a class="cta" href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg" download>Download Free</a>
+          <a
+            class="cta"
+            href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg"
+            data-analytics-event="Download Free Click"
+            data-analytics-placement="activation"
+            download
+            >Download Free</a
+          >
           <button class="secondary-cta" id="retry-activation" type="button">
             Open QuitBuddy
           </button>
@@ -82,6 +90,7 @@
       const manualCard = document.getElementById("manual-card");
       const licenseKeyDisplay = document.getElementById("license-key-display");
       const copyButton = document.getElementById("copy-license");
+      document.body.dataset.hasLicenseKey = licenseKey ? "has-key" : "no-key";
 
       function activationURL() {
         if (!licenseKey) return null;
@@ -112,5 +121,6 @@
         retryButton.disabled = true;
       }
     </script>
+    <script src="assets/js/analytics.js"></script>
   </body>
 </html>
