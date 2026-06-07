@@ -1,0 +1,11 @@
+{
+  "version": "1.0.2",
+  "minimumSystemVersion": "15.5",
+  "releaseDate": "2026-06-06",
+  "title": "QuitBuddy 1.0.2",
+  "summary": "Post-launch robustness update for the direct-download edition.",
+  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.2.dmg",
+  "changelogURL": "https://getquitbuddy.com/changelog.html",
+  "sha256": "8af6e10f8bb63deaa350653238888a78917e98eec73009f8dcdfa0924d5fe5e2",
+  "critical": false
+}
