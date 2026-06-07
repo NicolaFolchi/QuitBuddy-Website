@@ -109,12 +109,14 @@
         <h2>App Updates</h2>
         <p>
           Direct-download builds may periodically contact
-          <code>getquitbuddy.com</code> to fetch a static update metadata file.
-          QuitBuddy compares that file with the installed app version locally.
-          The request does not include your installed version, license key,
-          protected apps, rules, settings, quit history, or any unique device
-          identifier. Standard web server logs may still record request metadata
-          such as IP address, timestamp, user agent, and requested path.
+          <code>getquitbuddy.com</code> to fetch static update metadata and may
+          use Sparkle to fetch an appcast and download a signed update archive
+          when you choose to update. QuitBuddy compares update metadata with the
+          installed app version locally. The request does not include your
+          installed version, license key, protected apps, rules, settings, quit
+          history, or any unique device identifier. Standard web server logs may
+          still record request metadata such as IP address, timestamp, user
+          agent, and requested path.
         </p>
       </section>
 
