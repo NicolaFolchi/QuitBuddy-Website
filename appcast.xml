@@ -6,19 +6,19 @@
     <description>Direct-download QuitBuddy updates.</description>
     <language>en</language>
     <item>
-      <title>QuitBuddy 1.0.3</title>
+      <title>QuitBuddy 1.0.3-test</title>
       <link>https://getquitbuddy.com/changelog.html</link>
-      <sparkle:version>4</sparkle:version>
+      <sparkle:version>5</sparkle:version>
       <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.5.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>QuitBuddy 1.0.3</h2>
-        <p>Uses Sparkle as QuitBuddy's sole in-app updater for direct-download releases.</p>
+        <h2>QuitBuddy 1.0.3-test</h2>
+        <p>Temporary Sparkle update test build.</p>
       ]]></description>
       <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://getquitbuddy.com/downloads/QuitBuddy-1.0.3.dmg"
-                 sparkle:edSignature="QBbreiKxlbTyBp6r4iuSbROkAtbDuFbNzug0N5AMIvrGJmKrf2K/w03PYsc0GluJuW3ahMO9L1gO8JRnb0X5BA=="
-                 length="7227015"
+      <enclosure url="https://getquitbuddy.com/downloads/QuitBuddy-1.0.3-test.dmg"
+                 sparkle:edSignature="yIpwS7gs11tansBbo64m5Cqtnjt4Shiog5fBSA3ptJi3+8VnWag+QvnwmCuVrXuzgbxSv7hfpsuV6MHbDKk0Cw=="
+                 length="7226978"
                  type="application/octet-stream" />
     </item>
   </channel>
