@@ -1,11 +1,11 @@
 {
   "version": "1.0.3",
   "minimumSystemVersion": "15.5",
-  "releaseDate": "2026-06-07",
+  "releaseDate": "2026-06-08",
   "title": "QuitBuddy 1.0.3",
-  "summary": "Adds one-click in-app updates for future direct-download releases.",
+  "summary": "Uses Sparkle as QuitBuddy's sole in-app updater for direct-download releases.",
   "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.3.dmg",
   "changelogURL": "https://getquitbuddy.com/changelog.html",
-  "sha256": "eedcc72aaa93df2f47235d29876a37d34fcfe9bd1551a493438c989868f1571a",
+  "sha256": "a1907644d1f2d1c6c8de2b078d7db28ce358eba83447773cbcf0f2a6fd8af5c7",
   "critical": false
 }
