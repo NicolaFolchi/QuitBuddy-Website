@@ -9,6 +9,9 @@
   --text-secondary: #a5b1c2;
   --border: #2c3648;
   --glow: rgba(63, 123, 226, 0.35);
+  /* Strong custom easings — built-in ease/ease-out are too weak */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   font-size: clamp(15px, 1vw + 0.4rem, 17px);
 }
 
@@ -161,16 +164,23 @@ main {
   );
   color: #ffffff;
   box-shadow: 0 34px 74px rgba(59, 110, 225, 0.48);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+  transition: transform 0.18s var(--ease-out), box-shadow 0.22s var(--ease-out), filter 0.22s var(--ease-out);
   border: none;
   cursor: pointer;
   font-family: inherit;
 }
 
-.cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 38px 85px rgba(64, 115, 230, 0.58);
-  filter: saturate(1.12);
+@media (hover: hover) and (pointer: fine) {
+  .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 38px 85px rgba(64, 115, 230, 0.58);
+    filter: saturate(1.12);
+  }
+}
+
+.cta:active {
+  transform: scale(0.97);
+  transition-duration: 0.1s;
 }
 
 .nav-download {
@@ -200,13 +210,20 @@ main {
   border: 1px solid rgba(78, 201, 245, 0.18);
   box-shadow: 0 18px 42px rgba(4, 6, 12, 0.24);
   font-weight: 600;
-  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+  transition: transform 0.18s var(--ease-out), border-color 0.22s var(--ease-out), background 0.22s var(--ease-out);
 }
 
-.secondary-cta:hover {
-  transform: translateY(-2px);
-  background: rgba(78, 201, 245, 0.1);
-  border-color: rgba(78, 201, 245, 0.34);
+@media (hover: hover) and (pointer: fine) {
+  .secondary-cta:hover {
+    transform: translateY(-2px);
+    background: rgba(78, 201, 245, 0.1);
+    border-color: rgba(78, 201, 245, 0.34);
+  }
+}
+
+.secondary-cta:active {
+  transform: scale(0.97);
+  transition-duration: 0.1s;
 }
 
 .secondary-cta--on-gradient {
@@ -329,7 +346,7 @@ main {
   box-shadow: 0 40px 110px rgba(4, 6, 12, 0.6);
   padding: 0.8rem;
   margin: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
 }
 
 .screenshot-frame img {
@@ -415,7 +432,7 @@ main {
   background: rgba(16, 22, 34, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 24px 58px rgba(4, 6, 12, 0.42);
-  transition: transform 0.26s ease, border-color 0.26s ease, background 0.26s ease;
+  transition: transform 0.26s var(--ease-out), border-color 0.26s var(--ease-out), background 0.26s var(--ease-out);
 }
 
 .flow-step:hover {
@@ -867,7 +884,7 @@ main {
   flex-direction: column;
   gap: 0.9rem;
   align-items: flex-start;
-  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  transition: transform 0.28s var(--ease-out), border-color 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out);
 }
 
 .pricing-card:hover {
