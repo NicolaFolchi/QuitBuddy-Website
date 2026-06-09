@@ -1,11 +1,11 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "minimumSystemVersion": "15.5",
-  "releaseDate": "2026-06-08",
-  "title": "QuitBuddy 1.0.5",
-  "summary": "Fixes sandboxed Preferences persistence, Command-Q repeat handling, self-quit protection, and Preferences routing.",
-  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.5.dmg",
+  "releaseDate": "2026-06-09",
+  "title": "QuitBuddy 1.0.6",
+  "summary": "Adds a native macOS-style Preferences sidebar that mirrors menu-bar items, polishes the global quit-mode picker and About page, and defaults new protected apps to Confirm.",
+  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.6.dmg",
   "changelogURL": "https://getquitbuddy.com/changelog.html",
-  "sha256": "8134a7722d1d55c980847c55e8578045adc92f2f9fdaf82cc7a9b5c81d99a0c8",
+  "sha256": "dc71b3ef76d6b2a1e821c85f188f4f16805b1661af104335165e116f6486c708",
   "critical": false
 }

@@ -6,19 +6,19 @@
     <description>Direct-download QuitBuddy updates.</description>
     <language>en</language>
     <item>
-      <title>QuitBuddy 1.0.5</title>
+      <title>QuitBuddy 1.0.6</title>
       <link>https://getquitbuddy.com/changelog.html</link>
-      <sparkle:version>7</sparkle:version>
-      <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.5.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>QuitBuddy 1.0.5</h2>
-        <p>Fixes sandboxed Preferences persistence, Command-Q repeat handling, self-quit protection, and Preferences routing.</p>
+        <h2>QuitBuddy 1.0.6</h2>
+        <p>Adds a native macOS-style Preferences sidebar that mirrors menu-bar items, polishes the global quit-mode picker and About page, and defaults new protected apps to Confirm.</p>
       ]]></description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://getquitbuddy.com/downloads/QuitBuddy-1.0.5.dmg"
-                 sparkle:edSignature="+0Zi06JCbMZjwQVMh/tRU95eRJ+2vKeOnlUW+bdkJmdvdiPGKbrB2jGR7YtRZQSRAgVsgv67sQh5w82+82xiDw=="
-                 length="7325965"
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://getquitbuddy.com/downloads/QuitBuddy-1.0.6.dmg"
+                 sparkle:edSignature="aWyEU1WWPJpnaKOs+VevUHdw26OW31BocCBxh/YftunJb7b3YBy1x7qKMXMGBWUKMtajtllZuB6TzrDTld64AA=="
+                 length="7432440"
                  type="application/octet-stream" />
     </item>
   </channel>
