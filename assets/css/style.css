@@ -81,7 +81,7 @@ header.site-header {
   box-shadow: 0 8px 18px rgba(7, 10, 18, 0.35);
 }
 
-.brand h1 {
+.brand__name {
   margin: 0;
   font-size: 1.1rem;
   letter-spacing: 0.045em;
@@ -129,7 +129,7 @@ main {
   margin-bottom: 1.4rem;
 }
 
-.hero-copy h2 {
+.hero-copy h1 {
   font-size: clamp(2.8rem, 5vw, 3.8rem);
   line-height: 1.08;
   margin: 0 0 1.2rem;
