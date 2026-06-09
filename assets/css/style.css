@@ -1613,6 +1613,21 @@ footer a {
   line-height: 1.65;
 }
 
+.why__founder {
+  font-style: italic;
+  color: var(--text-primary);
+  border-left: 2px solid rgba(78, 201, 245, 0.4);
+  padding-left: 1rem;
+}
+
+.why__founder-by {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 .why__visual {
   margin: 0;
   position: relative;
