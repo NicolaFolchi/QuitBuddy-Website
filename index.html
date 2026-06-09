@@ -195,55 +195,45 @@
       <section class="audience reveal" id="audience" aria-label="Who is QuitBuddy for">
         <div class="section-heading">
           <h3>Who is this for?</h3>
-          <p>If you've lost work to Command-Q, you already know.</p>
+          <p>If you've ever accidentally quit an important Mac app, this is for you.</p>
         </div>
-        <ul class="audience-grid">
-          <li class="audience-card">
-            <span class="audience-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 9 4 12 8 15"/><polyline points="16 9 20 12 16 15"/><line x1="14" y1="6" x2="10" y2="18"/></svg>
-            </span>
-            <div class="audience-card__body">
-              <span class="audience-card__title">Developers</span>
-              <p>Protect Xcode, your terminal, VS Code, your JetBrains IDE, your simulator. Hold-to-quit is the sweet spot for long compiles.</p>
+        <ol class="audience-list">
+          <li class="audience-row">
+            <div class="audience-row__head">
+              <h4>Developers</h4>
+              <span class="audience-row__tag">Hold</span>
             </div>
+            <p>In Xcode, VS Code, Cursor, or a tail-following terminal. Hold-to-quit keeps a long compile or a live log from disappearing.</p>
           </li>
-          <li class="audience-card">
-            <span class="audience-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 1 9-9c0 1.66-1.34 3-3 3h-2a2 2 0 0 0 0 4 2 2 0 0 1-2 2z"/><circle cx="7.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="16.5" cy="11.5" r="1" fill="currentColor" stroke="none"/></svg>
-            </span>
-            <div class="audience-card__body">
-              <span class="audience-card__title">Designers</span>
-              <p>Figma, Sketch, Affinity, Photoshop. Confirm-to-quit catches the slip every time.</p>
+          <li class="audience-row">
+            <div class="audience-row__head">
+              <h4>Designers</h4>
+              <span class="audience-row__tag">Confirm</span>
             </div>
+            <p>In Figma, Sketch, Affinity, or Photoshop. Confirm-to-quit catches the slip every time.</p>
           </li>
-          <li class="audience-card">
-            <span class="audience-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.586 7.586"/></svg>
-            </span>
-            <div class="audience-card__body">
-              <span class="audience-card__title">Writers &amp; researchers</span>
-              <p>Scrivener, Ulysses, Notion, Obsidian, Bear. Browsers stay open until you mean to close them.</p>
+          <li class="audience-row">
+            <div class="audience-row__head">
+              <h4>Writers &amp; researchers</h4>
+              <span class="audience-row__tag">Confirm</span>
             </div>
+            <p>In Scrivener, Ulysses, Notion, Obsidian, or a browser with twelve open tabs. They stay open until you mean to close them.</p>
           </li>
-          <li class="audience-card">
-            <span class="audience-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg>
-            </span>
-            <div class="audience-card__body">
-              <span class="audience-card__title">Video &amp; audio creators</span>
-              <p>Final Cut, Logic, DaVinci, Ableton. Long sessions deserve a guard.</p>
+          <li class="audience-row">
+            <div class="audience-row__head">
+              <h4>Video &amp; audio creators</h4>
+              <span class="audience-row__tag">Hold</span>
             </div>
+            <p>In Final Cut, Logic, DaVinci, or Ableton. Long sessions deserve a guard.</p>
           </li>
-          <li class="audience-card">
-            <span class="audience-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </span>
-            <div class="audience-card__body">
-              <span class="audience-card__title">Anyone who's quit Safari by mistake</span>
-              <p>Which is everyone.</p>
+          <li class="audience-row">
+            <div class="audience-row__head">
+              <h4>Anyone who's quit Safari by mistake</h4>
+              <span class="audience-row__tag">Double&#8209;press</span>
             </div>
+            <p>Which is most of us. Pick the one app where the slip hurts most. Free protects it forever.</p>
           </li>
-        </ul>
+        </ol>
       </section>
 
       <section class="how-it-works reveal" id="how-it-works" aria-label="How QuitBuddy works">
@@ -409,42 +399,54 @@
         </div>
       </section>
       <section class="why reveal" id="why" aria-label="Why QuitBuddy">
-        <div class="section-heading">
-          <h3>Why QuitBuddy?</h3>
-          <p>Focused quit protection that feels at home on macOS.</p>
+        <div class="why__hero">
+          <div class="why__copy">
+            <span class="section-kicker">Why QuitBuddy</span>
+            <h3>A small moment of intention.</h3>
+            <p>
+              QuitBuddy adds one keystroke of friction between Command-Q
+              and losing your flow — only for the apps where the
+              difference matters. Everything else quits exactly the way
+              macOS quits it.
+            </p>
+          </div>
+          <figure class="why__visual" aria-hidden="true">
+            <div class="why-window">
+              <div class="why-window__bar">
+                <span class="why-window__dot why-window__dot--red"></span>
+                <span class="why-window__dot why-window__dot--yellow"></span>
+                <span class="why-window__dot why-window__dot--green"></span>
+                <span class="why-window__title">Xcode</span>
+              </div>
+              <div class="why-window__body">
+                <div class="why-window__keys">
+                  <kbd class="why-window__key">⌘</kbd>
+                  <kbd class="why-window__key">Q</kbd>
+                </div>
+                <div class="why-window__hud">
+                  <span class="why-window__hud-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                  </span>
+                  <div class="why-window__hud-body">
+                    <span class="why-window__hud-title">Quit Xcode?</span>
+                    <span class="why-window__hud-sub">You'll lose unsaved build state.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
         </div>
-        <ul class="pillars">
-          <li class="pillar">
-            <span class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/><circle cx="7" cy="6" r="0.6" fill="currentColor" stroke="none"/></svg>
-            </span>
-            <span class="pillar__text">Built for macOS, feels native</span>
-          </li>
-          <li class="pillar">
-            <span class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
-            </span>
-            <span class="pillar__text">Lightweight and energy-efficient</span>
-          </li>
-          <li class="pillar">
-            <span class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 12c0-3 3-3 3 0s-3 3-3 0z"/><path d="M6 12c0-3-3-3-3 0s3 3 3 0z"/><path d="M6 12c2 0 4 6 6 6s4-6 6-6"/><path d="M6 12c2 0 4-6 6-6s4 6 6 6"/></svg>
-            </span>
-            <span class="pillar__text">Standard lifetime license for core protection</span>
-          </li>
-          <li class="pillar">
-            <span class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-            </span>
-            <span class="pillar__text">Privacy-first with no telemetry or tracking</span>
-          </li>
-          <li class="pillar">
-            <span class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
-            </span>
-            <span class="pillar__text">Responsive support from the team that builds it</span>
-          </li>
-        </ul>
+        <p class="why__strip">
+          <span>Built for macOS</span>
+          <span class="why__strip-sep" aria-hidden="true">·</span>
+          <span>Pay once, own it</span>
+          <span class="why__strip-sep" aria-hidden="true">·</span>
+          <span>No telemetry</span>
+          <span class="why__strip-sep" aria-hidden="true">·</span>
+          <span>Lightweight</span>
+          <span class="why__strip-sep" aria-hidden="true">·</span>
+          <span>Replies from the developer</span>
+        </p>
       </section>
 
       <section class="faq-section reveal" id="faq" aria-label="Frequently asked questions">
