@@ -192,26 +192,56 @@
         </div>
       </section>
 
-      <section class="trust reveal" id="audience" aria-label="Who is QuitBuddy for">
+      <section class="audience reveal" id="audience" aria-label="Who is QuitBuddy for">
         <div class="section-heading">
           <h3>Who is this for?</h3>
           <p>If you've lost work to Command-Q, you already know.</p>
         </div>
-        <ul class="trust__list">
-          <li>
-            <strong>Developers</strong> — protect Xcode, your terminal, VS Code, your JetBrains IDE, your simulator. Hold-to-quit is the sweet spot for long compiles.
+        <ul class="audience-grid">
+          <li class="audience-card">
+            <span class="audience-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 9 4 12 8 15"/><polyline points="16 9 20 12 16 15"/><line x1="14" y1="6" x2="10" y2="18"/></svg>
+            </span>
+            <div class="audience-card__body">
+              <span class="audience-card__title">Developers</span>
+              <p>Protect Xcode, your terminal, VS Code, your JetBrains IDE, your simulator. Hold-to-quit is the sweet spot for long compiles.</p>
+            </div>
           </li>
-          <li>
-            <strong>Designers</strong> — Figma, Sketch, Affinity, Photoshop. Confirm-to-quit catches the slip every time.
+          <li class="audience-card">
+            <span class="audience-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 1 9-9c0 1.66-1.34 3-3 3h-2a2 2 0 0 0 0 4 2 2 0 0 1-2 2z"/><circle cx="7.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="16.5" cy="11.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <div class="audience-card__body">
+              <span class="audience-card__title">Designers</span>
+              <p>Figma, Sketch, Affinity, Photoshop. Confirm-to-quit catches the slip every time.</p>
+            </div>
           </li>
-          <li>
-            <strong>Writers and researchers</strong> — Scrivener, Ulysses, Notion, Obsidian, Bear. Browsers stay open until you mean to close them.
+          <li class="audience-card">
+            <span class="audience-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.586 7.586"/></svg>
+            </span>
+            <div class="audience-card__body">
+              <span class="audience-card__title">Writers &amp; researchers</span>
+              <p>Scrivener, Ulysses, Notion, Obsidian, Bear. Browsers stay open until you mean to close them.</p>
+            </div>
           </li>
-          <li>
-            <strong>Video &amp; audio creators</strong> — Final Cut, Logic, DaVinci, Ableton. Long sessions deserve a guard.
+          <li class="audience-card">
+            <span class="audience-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg>
+            </span>
+            <div class="audience-card__body">
+              <span class="audience-card__title">Video &amp; audio creators</span>
+              <p>Final Cut, Logic, DaVinci, Ableton. Long sessions deserve a guard.</p>
+            </div>
           </li>
-          <li>
-            <strong>Anyone who's ever quit Safari by mistake.</strong> Which is everyone.
+          <li class="audience-card">
+            <span class="audience-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </span>
+            <div class="audience-card__body">
+              <span class="audience-card__title">Anyone who's quit Safari by mistake</span>
+              <p>Which is everyone.</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -378,21 +408,46 @@
           </article>
         </div>
       </section>
-      <section class="trust reveal" id="why" aria-label="Why QuitBuddy">
+      <section class="why reveal" id="why" aria-label="Why QuitBuddy">
         <div class="section-heading">
           <h3>Why QuitBuddy?</h3>
           <p>Focused quit protection that feels at home on macOS.</p>
         </div>
-        <ul class="trust__list">
-          <li>Built for macOS, feels native</li>
-          <li>Lightweight and energy-efficient</li>
-          <li>Standard lifetime license for core protection</li>
-          <li>Privacy-first with no app telemetry or usage tracking</li>
-          <li>Responsive support from the team that builds it</li>
+        <ul class="pillars">
+          <li class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/><circle cx="7" cy="6" r="0.6" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="pillar__text">Built for macOS, feels native</span>
+          </li>
+          <li class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+            </span>
+            <span class="pillar__text">Lightweight and energy-efficient</span>
+          </li>
+          <li class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 12c0-3 3-3 3 0s-3 3-3 0z"/><path d="M6 12c0-3-3-3-3 0s3 3 3 0z"/><path d="M6 12c2 0 4 6 6 6s4-6 6-6"/><path d="M6 12c2 0 4-6 6-6s4 6 6 6"/></svg>
+            </span>
+            <span class="pillar__text">Standard lifetime license for core protection</span>
+          </li>
+          <li class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <span class="pillar__text">Privacy-first with no telemetry or tracking</span>
+          </li>
+          <li class="pillar">
+            <span class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+            </span>
+            <span class="pillar__text">Responsive support from the team that builds it</span>
+          </li>
         </ul>
       </section>
 
-      <section class="trust reveal" id="faq" aria-label="Frequently asked questions">
+      <section class="faq-section reveal" id="faq" aria-label="Frequently asked questions">
         <div class="section-heading">
           <h3>Questions you'd probably ask</h3>
           <p>Common questions about how QuitBuddy works and how it's sold.</p>

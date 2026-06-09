@@ -1502,3 +1502,246 @@ footer a {
     transform: none;
   }
 }
+
+/* =============================================================
+   Audience cards — "Who is this for?"
+   ============================================================= */
+.audience {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.audience-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.85rem;
+}
+
+.audience-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem 1.3rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(28, 36, 54, 0.85), rgba(20, 28, 44, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(78, 201, 245, 0.28);
+  background: linear-gradient(180deg, rgba(32, 42, 64, 0.92), rgba(22, 30, 46, 0.92));
+  box-shadow: 0 12px 32px rgba(4, 8, 18, 0.45);
+}
+
+.audience-card__icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: linear-gradient(135deg, rgba(59, 110, 225, 0.22), rgba(139, 91, 247, 0.18));
+  border: 1px solid rgba(78, 201, 245, 0.2);
+  color: var(--blue-accent);
+}
+
+.audience-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.audience-card__body {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.audience-card__title {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: -0.005em;
+}
+
+.audience-card__body p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =============================================================
+   Why pillars
+   ============================================================= */
+.why {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.pillars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.7rem;
+}
+
+.pillar {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.1rem 1.15rem;
+  border-radius: 16px;
+  background: rgba(14, 19, 30, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-1px);
+  border-color: rgba(78, 201, 245, 0.22);
+  background: rgba(18, 24, 38, 0.88);
+}
+
+.pillar__icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: linear-gradient(135deg, rgba(59, 110, 225, 0.18), rgba(139, 91, 247, 0.14));
+  color: var(--blue-accent);
+}
+
+.pillar__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.pillar__text {
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: -0.003em;
+  line-height: 1.4;
+}
+
+/* =============================================================
+   FAQ disclosure
+   ============================================================= */
+.faq-section {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.faq {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faq details {
+  border-radius: 16px;
+  background: rgba(14, 19, 30, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+
+.faq details:hover {
+  border-color: rgba(78, 201, 245, 0.2);
+}
+
+.faq details[open] {
+  background: rgba(18, 24, 38, 0.92);
+  border-color: rgba(78, 201, 245, 0.22);
+}
+
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.98rem;
+  letter-spacing: -0.005em;
+  line-height: 1.4;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid var(--text-secondary);
+  border-bottom: 2px solid var(--text-secondary);
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  margin-right: 4px;
+}
+
+.faq details[open] summary::after {
+  transform: translateY(2px) rotate(-135deg);
+  border-color: var(--blue-accent);
+}
+
+.faq details > p {
+  margin: 0;
+  padding: 0 1.25rem 1.05rem;
+  color: var(--text-secondary);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.faq details > p a {
+  color: var(--blue-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(78, 201, 245, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.faq details > p a:hover {
+  border-color: var(--blue-accent);
+}
+
+/* Mobile adjustments for the three sections above */
+@media (max-width: 640px) {
+  .audience-card {
+    padding: 1.05rem 1.1rem;
+  }
+
+  .audience-card__icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .pillar {
+    padding: 1rem 1rem;
+  }
+
+  .faq summary {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .faq details > p {
+    padding: 0 1rem 0.95rem;
+    font-size: 0.9rem;
+  }
+}
