@@ -33,6 +33,20 @@
       <section class="timeline" aria-label="QuitBuddy release timeline">
         <article class="timeline-entry">
           <span class="timeline-entry__date">June 2026</span>
+          <h2>QuitBuddy 1.0.5 persistence and Command-Q stability release</h2>
+          <p>
+            Fixes settings persistence in sandboxed direct builds and tightens Command-Q handling.
+          </p>
+          <ul>
+            <li>Preferences now persist reliably to <code>~/.config/quitbuddy/.quitbuddy-config.json</code>.</li>
+            <li>Held or repeated Command-Q is treated as one physical quit intent until the keys are released.</li>
+            <li>QuitBuddy protects itself from accidental quit, while allowing the macOS Input Monitoring restart prompt.</li>
+            <li>Command-, now opens the same Preferences window as the menu bar action.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-entry">
+          <span class="timeline-entry__date">June 2026</span>
           <h2>QuitBuddy 1.0.4 visual polish release</h2>
           <p>
             Improves quit-mode feedback and onboarding while fixing Preferences update stability.
@@ -68,7 +82,7 @@
             <li>Free: onboarding now registers QuitBuddy in Accessibility before opening System Settings, so users only need to enable the toggle.</li>
             <li>Free: the menu bar item is refreshed on reopen to improve practical visibility.</li>
             <li>Standard: Confirm no longer swallows unrelated keys while handling Return/Escape.</li>
-            <li>Standard: settings now use <code>~/.config/QuitBuddy</code>, with export still saving wherever you choose.</li>
+            <li>Standard: settings now use <code>~/.config/quitbuddy</code>, with export still saving wherever you choose.</li>
             <li>Standard: Hold mode and other protected quits no longer target QuitBuddy itself.</li>
             <li>Standard: slow-quitting apps like Steam or Zoom get more time before a warning appears.</li>
           </ul>

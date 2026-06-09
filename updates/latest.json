@@ -1,11 +1,11 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minimumSystemVersion": "15.5",
   "releaseDate": "2026-06-08",
-  "title": "QuitBuddy 1.0.4",
-  "summary": "Adds clearer quit-mode HUD visuals, feature onboarding, and stability fixes for Preferences updates.",
-  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.4.dmg",
+  "title": "QuitBuddy 1.0.5",
+  "summary": "Fixes sandboxed Preferences persistence, Command-Q repeat handling, self-quit protection, and Preferences routing.",
+  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.5.dmg",
   "changelogURL": "https://getquitbuddy.com/changelog.html",
-  "sha256": "06aa2e2bbbda3e84a827a203079b23e71820530fef6ab3efc4a1e09d4e44b944",
+  "sha256": "8134a7722d1d55c980847c55e8578045adc92f2f9fdaf82cc7a9b5c81d99a0c8",
   "critical": false
 }
