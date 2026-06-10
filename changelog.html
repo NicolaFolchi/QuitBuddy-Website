@@ -48,6 +48,20 @@
       <section class="timeline" aria-label="QuitBuddy release timeline">
         <article class="timeline-entry">
           <span class="timeline-entry__date">June 2026</span>
+          <h2>QuitBuddy 1.0.7 quit-on-window-close release</h2>
+          <p>
+            Adds an optional way to quit an app by clicking its window's close button, and hardens the test suite.
+          </p>
+          <ul>
+            <li>New global setting <strong>Quit app when closing its window</strong> (Preferences → General): clicking a window's red close button quits the whole app like ⌘Q, with no QuitBuddy prompt.</li>
+            <li>It's a Standard feature; free users see it disabled.</li>
+            <li>Works with standard window controls. Apps with custom or hidden title bars, or full-screen windows, may not respond.</li>
+            <li>Added extensive unit, regression, and component tests around the new behavior and the existing quit modes.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-entry">
+          <span class="timeline-entry__date">June 2026</span>
           <h2>QuitBuddy 1.0.6 Preferences sidebar and polish release</h2>
           <p>
             Redesigns Preferences with a native macOS sidebar that mirrors menu-bar items, polishes the global mode picker and About page, and improves new-rule defaults.
