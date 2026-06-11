@@ -1,11 +1,11 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "minimumSystemVersion": "15.5",
-  "releaseDate": "2026-06-10",
-  "title": "QuitBuddy 1.0.7",
-  "summary": "Adds an optional setting to quit an app by clicking its window's close button, like Command-Q, and hardens the test suite.",
-  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.7.dmg",
+  "releaseDate": "2026-06-11",
+  "title": "QuitBuddy 1.0.8",
+  "summary": "Warns you when a protected app such as Chrome has its own quit confirmation, with one-click guidance to turn it off so QuitBuddy handles it and you are not asked twice.",
+  "downloadURL": "https://getquitbuddy.com/downloads/QuitBuddy-1.0.8.dmg",
   "changelogURL": "https://getquitbuddy.com/changelog.html",
-  "sha256": "3e936e6614539c4295bbadfb17fdd18215e799c01f4078a887c0821640f088bb",
+  "sha256": "b937cc0920de898fc9292c3c09a6bb843f39d81a88ab2bd56565cb4e728bf76b",
   "critical": false
 }

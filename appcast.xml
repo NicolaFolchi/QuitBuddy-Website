@@ -6,19 +6,19 @@
     <description>Direct-download QuitBuddy updates.</description>
     <language>en</language>
     <item>
-      <title>QuitBuddy 1.0.7</title>
+      <title>QuitBuddy 1.0.8</title>
       <link>https://getquitbuddy.com/changelog.html</link>
-      <sparkle:version>9</sparkle:version>
-      <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.5.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
-        <h2>QuitBuddy 1.0.7</h2>
-        <p>Adds an optional setting to quit an app by clicking its window's close button, like Command-Q, and hardens the test suite.</p>
+        <h2>QuitBuddy 1.0.8</h2>
+        <p>Warns you when a protected app such as Chrome has its own quit confirmation, with one-click guidance to turn it off so QuitBuddy handles quit confirmation and you are not asked twice.</p>
       ]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
-      <enclosure url="https://getquitbuddy.com/downloads/QuitBuddy-1.0.7.dmg"
-                 sparkle:edSignature="YPaDqRYLm9T+ZwRHExE6hhDw4sXIr0kDCvchI8D88a8L84i8C3GM/zjURgYS7r1sz2QcGVR5m8KQ5pJHVO+LCg=="
-                 length="7441943"
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://getquitbuddy.com/downloads/QuitBuddy-1.0.8.dmg"
+                 sparkle:edSignature="wM+psZ7tOor9yduMsYAGZlTIyyNunmEIHXI1f5kQLIvGevw+hf+L/zg4fCRPhfjyrbVYxmH/qIIWeR/Gb1p3Dw=="
+                 length="7431213"
                  type="application/octet-stream" />
     </item>
   </channel>
