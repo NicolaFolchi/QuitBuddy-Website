@@ -1978,9 +1978,14 @@ footer a {
   }
 
   .js .reveal {
+    opacity: 0;
+    transform: none;
+    transition: opacity 0.32s var(--ease-hover);
+  }
+
+  .js .reveal.is-visible {
     opacity: 1;
     transform: none;
-    transition: opacity 0.24s var(--ease-hover);
   }
 
   .js .pain__grid > *,
@@ -2309,6 +2314,7 @@ footer a {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 0;
+  overflow: hidden;
 }
 
 .faq details:last-child {
@@ -2370,6 +2376,10 @@ footer a {
 /* Answer rises in on open instead of snapping (dropdown-range timing) */
 .faq details[open] > p {
   animation: rise-in 0.34s var(--ease-hover);
+}
+
+.faq details.is-animating > p {
+  animation: none;
 }
 
 .faq details > p a {
