@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security - QuitBuddy</title>
+    <link rel="canonical" href="https://getquitbuddy.com/security.html" />
+    <meta name="description" content="QuitBuddy security and trust overview: macOS permissions, local settings, direct updates, licensing, and disclosure contact." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="QuitBuddy" />
+    <meta property="og:url" content="https://getquitbuddy.com/security.html" />
+    <meta property="og:title" content="QuitBuddy security overview" />
+    <meta property="og:description" content="Review QuitBuddy permissions, local settings, direct updates, licensing, and disclosure contact." />
+    <meta property="og:image" content="https://getquitbuddy.com/assets/img/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QuitBuddy security overview" />
+    <meta name="twitter:description" content="Review QuitBuddy permissions, local settings, direct updates, licensing, and disclosure contact." />
+    <meta name="twitter:image" content="https://getquitbuddy.com/assets/img/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script data-goatcounter="https://quitbuddy.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  </head>
+  <body class="legal-page enterprise-page">
+    <main class="legal-wrapper enterprise-wrapper">
+      <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
+
+      <section class="legal-hero enterprise-hero">
+        <span class="section-kicker">Security and trust</span>
+        <h1>Built to be understandable before it is trusted.</h1>
+        <p>QuitBuddy is a direct-download macOS utility. This page summarizes what it asks for, what stays local, and how to report security concerns.</p>
+      </section>
+
+      <section class="enterprise-stat-grid" aria-label="Security posture summary">
+        <article>
+          <span>Local</span>
+          <strong>Settings stay on your Mac</strong>
+          <p>Per-app rules and preferences are stored locally and can be exported only when you choose.</p>
+        </article>
+        <article>
+          <span>Signed</span>
+          <strong>Developer ID distribution</strong>
+          <p>Direct builds are signed, notarized, and distributed as a macOS DMG.</p>
+        </article>
+        <article>
+          <span>Minimal</span>
+          <strong>No app telemetry SDKs</strong>
+          <p>The app does not include advertising, analytics, crash-reporting, keystroke-history, or click-history collection.</p>
+        </article>
+      </section>
+
+      <section class="timeline" aria-label="Security details">
+        <article class="timeline-entry">
+          <h2>Permissions</h2>
+          <p>Input Monitoring is used to detect Command-Q for configured quit protection and optional red close-button quit clicks. Accessibility is used to return focus and send a confirmed quit action after you explicitly choose to quit.</p>
+        </article>
+        <article class="timeline-entry">
+          <h2>Data handling</h2>
+          <p>QuitBuddy does not record typed content, upload keyboard input, sell data, or build usage profiles. Settings and diagnostics remain local unless you explicitly export or share them.</p>
+        </article>
+        <article class="timeline-entry">
+          <h2>Licensing</h2>
+          <p>Lemon Squeezy handles checkout, payment processing, license delivery, and license validation. QuitBuddy stores license state in the macOS Keychain and does not receive credit card details.</p>
+        </article>
+        <article class="timeline-entry">
+          <h2>Updates</h2>
+          <p>Direct-download builds use Sparkle for signed updates. Update checks use public metadata from getquitbuddy.com and do not include your protected apps, settings, license key, or quit history.</p>
+        </article>
+        <article class="timeline-entry timeline-entry--muted">
+          <h2>Security contact</h2>
+          <p>Report suspected vulnerabilities to <a href="mailto:quitbuddy.support@gmail.com?subject=QuitBuddy%20security%20report">quitbuddy.support@gmail.com</a>. Include reproduction steps, impact, macOS version, QuitBuddy version, and any relevant logs with secrets removed.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="support.html">Support</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html">Home</a>
+      </div>
+      <p>© QuitBuddy</p>
+    </footer>
+  </body>
+</html>

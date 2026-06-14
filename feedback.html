@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit Feedback - QuitBuddy</title>
+    <link rel="canonical" href="https://getquitbuddy.com/feedback.html" />
+    <meta
+      name="description"
+      content="Submit product feedback, bug reports, feature requests, and enterprise workflow notes for QuitBuddy."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="QuitBuddy" />
+    <meta property="og:url" content="https://getquitbuddy.com/feedback.html" />
+    <meta property="og:title" content="Submit QuitBuddy feedback" />
+    <meta property="og:description" content="Send structured feedback, bug reports, feature requests, and workflow notes to QuitBuddy." />
+    <meta property="og:image" content="https://getquitbuddy.com/assets/img/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Submit QuitBuddy feedback" />
+    <meta name="twitter:description" content="Send structured feedback, bug reports, feature requests, and workflow notes to QuitBuddy." />
+    <meta name="twitter:image" content="https://getquitbuddy.com/assets/img/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script data-goatcounter="https://quitbuddy.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  </head>
+  <body class="legal-page enterprise-page">
+    <main class="legal-wrapper enterprise-wrapper">
+      <a class="back-link" href="index.html">&#8592; Back to QuitBuddy</a>
+
+      <section class="legal-hero enterprise-hero">
+        <span class="section-kicker">Product feedback</span>
+        <h1>Help shape QuitBuddy.</h1>
+        <p>
+          Send bug reports, feature requests, workflow pain points, or team rollout questions. The form opens your email client with a structured message so nothing is stored by the website.
+        </p>
+      </section>
+
+      <section class="enterprise-stat-grid" aria-label="Feedback handling standards">
+        <article>
+          <span>01</span>
+          <strong>Structured intake</strong>
+          <p>Separate product ideas, bugs, licensing questions, and team deployment notes.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Privacy aware</strong>
+          <p>Send only the app name, macOS version, QuitBuddy version, and details you choose to include.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Human reviewed</strong>
+          <p>Feedback is read directly by the developer and used to prioritize practical Mac workflow improvements.</p>
+        </article>
+      </section>
+
+      <section class="enterprise-panel feedback-panel" aria-label="Feedback form">
+        <div class="enterprise-panel__intro">
+          <span class="section-kicker">Submit</span>
+          <h2>Feedback details</h2>
+          <p>
+            Include enough context to reproduce the issue or understand the workflow. Avoid sharing license keys, passwords, private documents, or typed content.
+          </p>
+        </div>
+
+        <form class="feedback-form" id="feedback-form" action="mailto:quitbuddy.support@gmail.com" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="feedback-name">Name <span class="optional">optional</span></label>
+              <input id="feedback-name" name="name" type="text" autocomplete="name" placeholder="Jane Appleseed" />
+            </div>
+            <div class="form-field">
+              <label for="feedback-email">Email <span class="optional">optional</span></label>
+              <input id="feedback-email" name="email" type="email" autocomplete="email" placeholder="jane@example.com" />
+            </div>
+            <div class="form-field">
+              <label for="feedback-type">Feedback type</label>
+              <select id="feedback-type" name="type" required>
+                <option value="Bug report">Bug report</option>
+                <option value="Red close button quit">Red close button quit</option>
+                <option value="Feature request">Feature request</option>
+                <option value="Enterprise workflow">Enterprise workflow</option>
+                <option value="Licensing question">Licensing question</option>
+                <option value="General feedback">General feedback</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="feedback-version">QuitBuddy version <span class="optional">optional</span></label>
+              <input id="feedback-version" name="quitbuddy_version" type="text" placeholder="1.0.8" />
+            </div>
+            <div class="form-field">
+              <label for="feedback-macos">macOS version <span class="optional">optional</span></label>
+              <input id="feedback-macos" name="macos_version" type="text" placeholder="macOS 15.5" />
+            </div>
+            <div class="form-field">
+              <label for="feedback-app">Affected app <span class="optional">optional</span></label>
+              <input id="feedback-app" name="affected_app" type="text" placeholder="Xcode, Safari, Figma, Terminal..." />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="feedback-message">What happened, or what should QuitBuddy support?</label>
+            <textarea id="feedback-message" name="message" required placeholder="Describe the workflow, steps to reproduce, expected behavior, and actual behavior. For red-button quit issues, mention whether the app uses standard macOS traffic-light buttons or a custom title bar."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="cta" type="submit" data-analytics-event="Feedback Submit Click" data-analytics-placement="feedback-form">Prepare Email</button>
+            <a class="secondary-cta" href="mailto:quitbuddy.support@gmail.com?subject=QuitBuddy%20feedback">Email directly</a>
+          </div>
+        </form>
+      </section>
+
+      <section class="enterprise-panel enterprise-panel--split" aria-label="Feedback guidance">
+        <article>
+          <h2>For bug reports</h2>
+          <p>Share the protected app, the configured quit mode, whether the app has its own quit warning, and the shortest set of steps that reproduces the issue.</p>
+        </article>
+        <article>
+          <h2>For team workflows</h2>
+          <p>Describe the apps your team protects, policy expectations, license count, and deployment constraints. Do not include confidential internal data.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="support.html">Support</a>
+        <a href="security.html">Security</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html">Home</a>
+      </div>
+      <p>© QuitBuddy</p>
+    </footer>
+
+    <script>
+      const feedbackForm = document.getElementById("feedback-form");
+
+      feedbackForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const data = new FormData(feedbackForm);
+        const type = data.get("type") || "General feedback";
+        const lines = [
+          `Type: ${type}`,
+          `Name: ${data.get("name") || "Not provided"}`,
+          `Email: ${data.get("email") || "Not provided"}`,
+          `QuitBuddy version: ${data.get("quitbuddy_version") || "Not provided"}`,
+          `macOS version: ${data.get("macos_version") || "Not provided"}`,
+          `Affected app: ${data.get("affected_app") || "Not provided"}`,
+          "",
+          "Message:",
+          data.get("message") || ""
+        ];
+
+        window.location.href = `mailto:quitbuddy.support@gmail.com?subject=${encodeURIComponent(`QuitBuddy feedback: ${type}`)}&body=${encodeURIComponent(lines.join("\n"))}`;
+      });
+    </script>
+    <script src="assets/js/analytics.js"></script>
+  </body>
+</html>

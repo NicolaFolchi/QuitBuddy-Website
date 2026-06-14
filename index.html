@@ -253,7 +253,7 @@
           </article>
           <article class="mode-card">
             <h4>Close-Button Quit</h4>
-            <p>Optionally quit the whole app when you click a window's red close button, like ⌘Q.</p>
+            <p>For mouse-heavy workflows: make the red window close button quit the whole app like ⌘Q.</p>
           </article>
         </div>
       </section>
@@ -276,6 +276,7 @@
           <ul>
             <li>Global quit mode for every app</li>
             <li>Per-app rules for total control</li>
+            <li>Optional red close button quit for mouse-first users</li>
             <li>No typed content recording or keystroke history</li>
             <li>Export & import settings across devices</li>
             <li>Clean, native preferences window</li>
@@ -461,6 +462,13 @@
             </div>
             <p>Which is most of us. Pick the one app where the slip hurts most. Free protects it forever.</p>
           </li>
+          <li class="audience-row">
+            <div class="audience-row__head">
+              <h4>Heavy mouse users</h4>
+              <span class="audience-row__tag">Red button</span>
+            </div>
+            <p>Turn the red window close button into a full app quit, so clicking close behaves like pressing ⌘Q in standard Mac windows.</p>
+          </li>
         </ol>
       </section>
 
@@ -487,8 +495,12 @@
             <p>System remaps are global and blunt. QuitBuddy lets each app behave differently — Hold for Xcode, Confirm for Safari, Allow Normal for Notes — without any keyboard remapping at all.</p>
           </details>
           <details>
+            <summary>Can the red window close button quit the whole app?</summary>
+            <p>Yes. Standard includes a global setting called <strong>Quit app when closing its window</strong>. When enabled, clicking a standard Mac window's red close button quits the owning app like ⌘Q, with no extra QuitBuddy prompt. Apps with custom, borderless, relocated, or full-screen window controls may behave differently.</p>
+          </details>
+          <details>
             <summary>What does QuitBuddy collect?</summary>
-            <p>Nothing. No analytics, no telemetry, no keystroke history. Input Monitoring is only used to detect Command-Q. The <a href="privacy.html">privacy policy</a> spells this out.</p>
+            <p>Nothing. No analytics, no telemetry, no keystroke history. Input Monitoring is only used to detect configured quit actions: Command-Q and, if you enable it, red close-button quit clicks. The <a href="privacy.html">privacy policy</a> spells this out.</p>
           </details>
           <details>
             <summary>What if I want a refund?</summary>
@@ -535,7 +547,9 @@
 
     <footer class="site-footer">
       <div class="footer-links">
-        <a href="mailto:quitbuddy.support@gmail.com">Support</a>
+        <a href="support.html">Support</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="security.html">Security</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="changelog.html">Changelog</a>
         <a href="press.html">Press Kit</a>
