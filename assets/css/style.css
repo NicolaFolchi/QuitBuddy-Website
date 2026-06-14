@@ -13,6 +13,7 @@
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --ease-surface: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-hover: cubic-bezier(0.2, 0.8, 0.2, 1);
   font-size: clamp(15px, 1vw + 0.4rem, 17px);
 }
 
@@ -190,10 +191,11 @@ main {
   );
   color: #ffffff;
   box-shadow: 0 34px 74px rgba(59, 110, 225, 0.48);
-  transition: transform 0.18s var(--ease-out), box-shadow 0.22s var(--ease-out), filter 0.22s var(--ease-out);
+  transition: transform 0.26s var(--ease-hover), box-shadow 0.32s var(--ease-hover), filter 0.32s var(--ease-hover);
   border: none;
   cursor: pointer;
   font-family: inherit;
+  will-change: transform;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -206,7 +208,7 @@ main {
 
 .cta:active {
   transform: scale(0.97);
-  transition-duration: 0.1s;
+  transition-duration: 0.16s;
 }
 
 .nav-download {
@@ -219,7 +221,7 @@ main {
   background: linear-gradient(90deg, currentColor, currentColor) 0 100% / 0 1px no-repeat;
   font-weight: 600;
   color: var(--blue-accent);
-  transition: background-size 0.2s var(--ease-out), color 0.2s var(--ease-out);
+  transition: background-size 0.28s var(--ease-hover), color 0.28s var(--ease-hover);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -245,7 +247,8 @@ main {
   border: 1px solid rgba(78, 201, 245, 0.18);
   box-shadow: 0 18px 42px rgba(4, 6, 12, 0.24);
   font-weight: 600;
-  transition: transform 0.18s var(--ease-out), border-color 0.22s var(--ease-out), background 0.22s var(--ease-out);
+  transition: transform 0.26s var(--ease-hover), border-color 0.32s var(--ease-hover), background 0.32s var(--ease-hover);
+  will-change: transform;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -258,7 +261,7 @@ main {
 
 .secondary-cta:active {
   transform: scale(0.97);
-  transition-duration: 0.1s;
+  transition-duration: 0.16s;
 }
 
 .secondary-cta--on-gradient {
@@ -381,7 +384,8 @@ main {
   box-shadow: 0 40px 110px rgba(4, 6, 12, 0.6);
   padding: 0.8rem;
   margin: 0;
-  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+  transition: transform 0.42s var(--ease-hover), box-shadow 0.42s var(--ease-hover), border-color 0.36s var(--ease-hover);
+  will-change: transform;
 }
 
 .screenshot-frame img {
@@ -469,7 +473,8 @@ main {
   background: rgba(16, 22, 34, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 24px 58px rgba(4, 6, 12, 0.42);
-  transition: transform 0.26s var(--ease-out), border-color 0.26s var(--ease-out), background 0.26s var(--ease-out);
+  transition: transform 0.34s var(--ease-hover), border-color 0.34s var(--ease-hover), background 0.34s var(--ease-hover);
+  will-change: transform;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -520,7 +525,8 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.04);
   padding: 1.4rem;
   box-shadow: 0 20px 50px rgba(4, 6, 12, 0.45);
-  transition: transform 0.22s var(--ease-out), border-color 0.22s var(--ease-out), background 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out);
+  transition: transform 0.32s var(--ease-hover), border-color 0.32s var(--ease-hover), background 0.32s var(--ease-hover), box-shadow 0.32s var(--ease-hover);
+  will-change: transform;
 }
 
 .pain__grid h4 {
@@ -560,9 +566,10 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.04);
   padding: 1.4rem;
   box-shadow: 0 26px 60px rgba(4, 6, 12, 0.5);
-  transition: transform 0.24s var(--ease-out), border-color 0.24s var(--ease-out), box-shadow 0.24s var(--ease-out);
+  transition: transform 0.34s var(--ease-hover), border-color 0.34s var(--ease-hover), box-shadow 0.34s var(--ease-hover);
   position: relative;
   overflow: hidden;
+  will-change: transform;
 }
 
 .mode-card::before {
@@ -572,7 +579,8 @@ main {
   height: 120px;
   background: linear-gradient(90deg, transparent, rgba(78, 201, 245, 0.14), transparent);
   transform: translateX(-80%) rotate(10deg);
-  transition: transform 0.58s var(--ease-surface);
+  pointer-events: none;
+  transition: transform 0.72s var(--ease-surface);
 }
 
 .mode-card h4 {
@@ -592,7 +600,8 @@ main {
   inset: 0;
   border-radius: inherit;
   border: 1px solid transparent;
-  transition: border-color 0.24s var(--ease-out);
+  pointer-events: none;
+  transition: border-color 0.34s var(--ease-hover);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -699,7 +708,8 @@ main {
 }
 
 .setup__copy {
-  transition: transform 0.22s var(--ease-out);
+  transition: transform 0.34s var(--ease-hover);
+  will-change: transform;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -754,7 +764,7 @@ main {
   background: linear-gradient(90deg, currentColor, currentColor) 50% 100% / 0 1px no-repeat;
   color: var(--text-secondary);
   font-weight: 600;
-  transition: color 0.18s var(--ease-out), background-size 0.18s var(--ease-out);
+  transition: color 0.28s var(--ease-hover), background-size 0.28s var(--ease-hover);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -944,7 +954,8 @@ main {
   align-items: flex-start;
   position: relative;
   overflow: hidden;
-  transition: transform 0.24s var(--ease-out), border-color 0.24s var(--ease-out), box-shadow 0.24s var(--ease-out);
+  transition: transform 0.36s var(--ease-hover), border-color 0.36s var(--ease-hover), box-shadow 0.36s var(--ease-hover);
+  will-change: transform;
 }
 
 .pricing-card::after {
@@ -954,7 +965,7 @@ main {
   pointer-events: none;
   background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.1), transparent 32%);
   opacity: 0;
-  transition: opacity 0.24s var(--ease-out);
+  transition: opacity 0.36s var(--ease-hover);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -1145,7 +1156,7 @@ main {
 .js .reveal {
   opacity: 0;
   transform: translateY(22px) scale(0.99);
-  transition: opacity 0.58s var(--ease-surface), transform 0.58s var(--ease-surface);
+  transition: opacity 0.74s var(--ease-surface), transform 0.74s var(--ease-surface);
 }
 
 .js .reveal.is-visible {
@@ -1177,7 +1188,7 @@ main {
   opacity: 1;
   /* `backwards` (not `forwards`) so the resting transform reverts to the
      element's own — keeping the :hover lift intact after entrance. */
-  animation: rise-in 0.42s var(--ease-surface) backwards;
+  animation: rise-in 0.62s var(--ease-surface) backwards;
 }
 
 .js .is-visible .pain__grid > :nth-child(2),
@@ -1339,7 +1350,7 @@ main {
   margin-bottom: 2rem;
   color: var(--text-secondary);
   font-weight: 600;
-  transition: color 0.18s var(--ease-out), transform 0.18s var(--ease-out);
+  transition: color 0.28s var(--ease-hover), transform 0.28s var(--ease-hover);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -1401,7 +1412,8 @@ main {
   background: rgba(14, 19, 30, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 24px 62px rgba(4, 6, 12, 0.4);
-  transition: border-color 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out), transform 0.22s var(--ease-out);
+  transition: border-color 0.34s var(--ease-hover), box-shadow 0.34s var(--ease-hover), transform 0.34s var(--ease-hover);
+  will-change: transform;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -1563,7 +1575,7 @@ textarea {
   font-size: 1rem;
   font-family: inherit;
   color: var(--text-primary);
-  transition: border-color 0.18s var(--ease-out), box-shadow 0.18s var(--ease-out), background 0.18s var(--ease-out), transform 0.18s var(--ease-out);
+  transition: border-color 0.28s var(--ease-hover), box-shadow 0.28s var(--ease-hover), background 0.28s var(--ease-hover), transform 0.28s var(--ease-hover);
 }
 
 input[type="text"]::placeholder,
@@ -1664,6 +1676,7 @@ footer a {
   border: 1px solid rgba(255, 255, 255, 0.07);
   background: linear-gradient(180deg, rgba(16, 22, 35, 0.94), rgba(10, 15, 25, 0.94));
   box-shadow: 0 24px 62px rgba(4, 6, 12, 0.42);
+  transition: border-color 0.34s var(--ease-hover), box-shadow 0.34s var(--ease-hover), transform 0.34s var(--ease-hover), background 0.34s var(--ease-hover);
 }
 
 .enterprise-stat-grid article::after,
@@ -1675,7 +1688,7 @@ footer a {
   pointer-events: none;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 34%);
   opacity: 0;
-  transition: opacity 0.22s var(--ease-out);
+  transition: opacity 0.34s var(--ease-hover);
 }
 
 .enterprise-stat-grid article {
@@ -1756,12 +1769,13 @@ footer a {
   min-height: 210px;
   border-radius: 28px;
   padding: clamp(1.3rem, 3vw, 1.8rem);
-  transition: border-color 0.2s var(--ease-out), transform 0.2s var(--ease-out), background 0.2s var(--ease-out);
+  transition: border-color 0.34s var(--ease-hover), transform 0.34s var(--ease-hover), background 0.34s var(--ease-hover);
+  will-change: transform;
 }
 
 .enterprise-route-card:active {
   transform: scale(0.985);
-  transition-duration: 0.1s;
+  transition-duration: 0.16s;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -1797,7 +1811,7 @@ footer a {
 }
 
 .form-field label {
-  transition: color 0.18s var(--ease-out);
+  transition: color 0.28s var(--ease-hover);
 }
 
 .form-field:focus-within label {
@@ -1824,7 +1838,7 @@ footer a {
 .legal-page .enterprise-route-card,
 .legal-page .enterprise-panel,
 .legal-page .site-footer {
-  animation: page-rise 0.5s var(--ease-surface) both;
+  animation: page-rise 0.68s var(--ease-surface) backwards;
 }
 
 .legal-page .legal-hero { animation-delay: 45ms; }
@@ -1941,17 +1955,32 @@ footer a {
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
+  body::before,
+  header.site-header,
+  .hero-visual .screenshot-frame,
+  .hero-orbit,
+  .hero-chip,
+  .js .pain.is-visible .pain__grid > *,
+  .js .how-it-works.is-visible .flow-steps > *,
+  .js .modes.is-visible .modes__grid > *,
+  .js .audience.is-visible .audience-list > *,
+  .legal-page .back-link,
+  .legal-page .legal-hero,
+  .legal-page .privacy-summary article,
+  .legal-page .legal-card,
+  .legal-page .timeline-entry,
+  .legal-page .enterprise-stat-grid article,
+  .legal-page .enterprise-route-card,
+  .legal-page .enterprise-panel,
+  .legal-page .site-footer,
+  .faq details[open] > p {
+    animation: none !important;
   }
 
   .js .reveal {
     opacity: 1;
     transform: none;
+    transition: opacity 0.24s var(--ease-hover);
   }
 
   .js .pain__grid > *,
@@ -1959,7 +1988,6 @@ footer a {
   .js .modes__grid > *,
   .js .audience-list > * {
     opacity: 1;
-    animation: none !important;
   }
 
   .legal-page .back-link,
@@ -1999,7 +2027,8 @@ footer a {
   gap: 0.35rem;
   padding: 1.35rem 1.65rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  transition: background 0.18s var(--ease-out), transform 0.18s var(--ease-out);
+  transition: background 0.32s var(--ease-hover), transform 0.32s var(--ease-hover);
+  will-change: transform;
 }
 
 .audience-row:last-child {
@@ -2299,7 +2328,7 @@ footer a {
   font-size: 0.98rem;
   letter-spacing: -0.005em;
   line-height: 1.4;
-  transition: color 0.18s var(--ease-out), background 0.18s var(--ease-out);
+  transition: color 0.3s var(--ease-hover), background 0.3s var(--ease-hover);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -2321,7 +2350,7 @@ footer a {
   border-right: 2px solid var(--text-secondary);
   border-bottom: 2px solid var(--text-secondary);
   transform: translateY(-2px) rotate(45deg);
-  transition: transform 0.22s var(--ease-out), border-color 0.22s var(--ease-out);
+  transition: transform 0.32s var(--ease-hover), border-color 0.32s var(--ease-hover);
   margin-right: 4px;
 }
 
@@ -2340,14 +2369,14 @@ footer a {
 
 /* Answer rises in on open instead of snapping (dropdown-range timing) */
 .faq details[open] > p {
-  animation: rise-in 0.22s var(--ease-out);
+  animation: rise-in 0.34s var(--ease-hover);
 }
 
 .faq details > p a {
   color: var(--blue-accent);
   text-decoration: none;
   border-bottom: 1px solid rgba(78, 201, 245, 0.3);
-  transition: border-color 0.18s var(--ease-out), color 0.18s var(--ease-out);
+  transition: border-color 0.28s var(--ease-hover), color 0.28s var(--ease-hover);
 }
 
 .faq details > p a:hover {
