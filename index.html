@@ -107,6 +107,7 @@
           href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.8.dmg"
           data-analytics-event="Download Free Click"
           data-analytics-placement="header"
+          data-download-free-link
           download
           >Download Free</a
         >
@@ -139,6 +140,7 @@
               href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.8.dmg"
               data-analytics-event="Download Free Click"
               data-analytics-placement="hero"
+              data-download-free-link
               download
               >Download Free</a
             >
@@ -334,6 +336,7 @@
               href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.8.dmg"
               data-analytics-event="Download Free Click"
               data-analytics-placement="pricing"
+              data-download-free-link
               download
               >Download Free</a
             >
@@ -526,6 +529,7 @@
               href="https://getquitbuddy.com/downloads/QuitBuddy-1.0.8.dmg"
               data-analytics-event="Download Free Click"
               data-analytics-placement="footer-cta"
+              data-download-free-link
               download
               >Download Free</a
             >
@@ -556,6 +560,38 @@
       </div>
       <p>© <span id="year"></span> QuitBuddy</p>
     </footer>
+
+    <aside
+      class="download-signup"
+      id="download-signup"
+      aria-live="polite"
+      aria-label="Optional QuitBuddy update signup"
+      hidden
+    >
+      <button class="download-signup__close" type="button" aria-label="Dismiss update signup">×</button>
+      <div class="download-signup__copy">
+        <p class="download-signup__eyebrow">Download started</p>
+        <h2>Get QuitBuddy updates?</h2>
+        <p>Release notes, setup tips, and the occasional note from the developer.</p>
+      </div>
+      <form class="download-signup__form" id="download-signup-form" novalidate>
+        <label for="download-signup-email">Email address</label>
+        <input
+          id="download-signup-email"
+          name="email"
+          type="email"
+          inputmode="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          required
+        />
+        <input class="download-signup__trap" name="website_url" type="text" tabindex="-1" autocomplete="new-password" aria-hidden="true" />
+        <button class="cta" type="submit">Keep me updated</button>
+      </form>
+      <p class="download-signup__note">No account. No spam. Unsubscribe anytime.</p>
+      <p class="download-signup__status" id="download-signup-status" role="status"></p>
+      <button class="download-signup__dismiss" type="button">No thanks</button>
+    </aside>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
@@ -613,5 +649,6 @@
       });
     </script>
     <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/download-signup.js"></script>
   </body>
 </html>

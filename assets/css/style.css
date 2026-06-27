@@ -1616,6 +1616,168 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.download-signup {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.5rem);
+  bottom: clamp(1rem, 3vw, 1.5rem);
+  z-index: 120;
+  width: min(390px, calc(100vw - 2rem));
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 26px;
+  color: var(--text-primary);
+  background:
+    linear-gradient(145deg, rgba(20, 29, 46, 0.96), rgba(12, 18, 30, 0.96)),
+    radial-gradient(circle at 14% 0%, rgba(78, 201, 245, 0.18), transparent 16rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 34px 90px rgba(4, 6, 12, 0.6);
+  backdrop-filter: blur(22px);
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  transition: opacity 0.24s var(--ease-hover), transform 0.24s var(--ease-hover);
+}
+
+.download-signup[hidden] {
+  display: none;
+}
+
+.download-signup.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.download-signup__close {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: color 0.24s var(--ease-hover), background 0.24s var(--ease-hover), transform 0.24s var(--ease-hover);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .download-signup__close:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.04);
+  }
+}
+
+.download-signup__copy {
+  display: grid;
+  gap: 0.35rem;
+  padding-right: 2.2rem;
+}
+
+.download-signup__copy h2,
+.download-signup__copy p {
+  margin: 0;
+}
+
+.download-signup__copy h2 {
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.download-signup__copy p:not(.download-signup__eyebrow) {
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.download-signup__eyebrow {
+  color: var(--blue-accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.download-signup__form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.download-signup__form label {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.download-signup__form input[type="email"] {
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+}
+
+.download-signup__form .cta {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  box-shadow: 0 20px 48px rgba(59, 110, 225, 0.34);
+}
+
+.download-signup__form .cta:disabled {
+  cursor: wait;
+  opacity: 0.66;
+  transform: none;
+}
+
+.download-signup__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.download-signup__note,
+.download-signup__status {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.download-signup__status:not(:empty) {
+  color: #c9d7ea;
+}
+
+.download-signup__dismiss {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  color: var(--blue-accent);
+  background: transparent;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .download-signup__dismiss:hover {
+    color: #8fe5ff;
+  }
+}
+
+@media (max-width: 640px) {
+  .download-signup {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    width: calc(100vw - 1.5rem);
+    border-radius: 22px;
+    padding: 1.15rem;
+  }
+}
+
 footer {
   padding: 3rem 1.2rem 3.6rem;
   text-align: center;
